@@ -133,3 +133,87 @@ button {
       width: auto; }
     .serviceDetails__item__text--bold {
       font-weight: bold; }
+
+.games {
+  display: flex;
+  gap: 1rem; }
+  .games__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    border-radius: 4px;
+    padding: 2rem 1rem; }
+    .games__container__title {
+      font-size: 1.7em;
+      font-weight: bold; }
+    .games__container__subtitle {
+      color: #ff6801;
+      margin-bottom: 2rem; }
+  .games__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem; }
+    .games__card__itemContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 0.5rem; }
+    .games__card__viewMore {
+      width: 30%; }
+    .games__card__title {
+      width: 100%; }
+    .games__card__item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 180px; }
+      .games__card__item__text {
+        font-size: 0.8em;
+        text-align: center;
+        margin: 1rem auto 0 auto; }
+      .games__card__item__img {
+        width: 100%;
+        height: auto; }
+    .games__card--purple .games__card__title,
+    .games__card--purple .games__card__item {
+      background-color: #6937e6; }
+    .games__card--purple .games__card__viewMore {
+      border-color: #6937e6; }
+    .games__card--yellow {
+      color: #1a1a1a; }
+      .games__card--yellow .games__card__title {
+        color: #1a1a1a; }
+      .games__card--yellow .games__card__title,
+      .games__card--yellow .games__card__item {
+        background-color: #effd5f; }
+      .games__card--yellow .games__card__viewMore {
+        border-color: #effd5f; }
+    .games__card--orange .games__card__title,
+    .games__card--orange .games__card__item {
+      background-color: #e0773e; }
+    .games__card--orange .games__card__viewMore {
+      border-color: #e0773e; }
+    .games__card--red .games__card__title,
+    .games__card--red .games__card__item {
+      background-color: #c8302f; }
+    .games__card--red .games__card__viewMore {
+      border-color: #c8302f; }
+    .games__card--green {
+      color: #1a1a1a; }
+      .games__card--green .games__card__title {
+        color: #1a1a1a; }
+      .games__card--green .games__card__title,
+      .games__card--green .games__card__item {
+        background-color: #6fe3a6; }
+      .games__card--green .games__card__viewMore {
+        border-color: #6fe3a6; }
+    .games__card--blue .games__card__title,
+    .games__card--blue .games__card__item {
+      background-color: #0d49f5; }
+    .games__card--blue .games__card__viewMore {
+      border-color: #0d49f5; }

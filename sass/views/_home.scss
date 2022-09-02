@@ -125,3 +125,123 @@
     }
   }
 }
+
+.games {
+  display: flex;
+  gap: 1rem;
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $black;
+    border-radius: 4px;
+    padding: 2rem 1rem;
+    // gap: 2rem;
+    &__title {
+      font-size: 1.7em;
+      font-weight: bold;
+    }
+    &__subtitle {
+      color: $orange;
+      margin-bottom: 2rem;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    &__itemContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 0.5rem;
+    }
+    &__viewMore {
+      width: 30%;
+    }
+    &__title {
+      width: 100%;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 180px;
+      &__text {
+        font-size: 0.8em;
+        text-align: center;
+        margin: 1rem auto 0 auto;
+      }
+      &__img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &--purple {
+      .games__card__title,
+      .games__card__item {
+        background-color: $purple;
+      }
+      .games__card__viewMore {
+        border-color: $purple;
+      }
+    }
+    &--yellow {
+      color: $black;
+      .games__card__title {
+        color: $black;
+      }
+      .games__card__title,
+      .games__card__item {
+        background-color: $yellow;
+      }
+      .games__card__viewMore {
+        border-color: $yellow;
+      }
+    }
+    &--orange {
+      .games__card__title,
+      .games__card__item {
+        background-color: $orangeGame;
+      }
+      .games__card__viewMore {
+        border-color: $orangeGame;
+      }
+    }
+    &--red {
+      .games__card__title,
+      .games__card__item {
+        background-color: $red;
+      }
+      .games__card__viewMore {
+        border-color: $red;
+      }
+    }
+    &--green {
+      color: $black;
+      .games__card__title {
+        color: $black;
+      }
+      .games__card__title,
+      .games__card__item {
+        background-color: $green;
+      }
+      .games__card__viewMore {
+        border-color: $green;
+      }
+    }
+    &--blue {
+      .games__card__title,
+      .games__card__item {
+        background-color: $blue;
+      }
+      .games__card__viewMore {
+        border-color: $blue;
+      }
+    }
+  }
+}
