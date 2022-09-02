@@ -15,10 +15,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+      <nav class="navbar justify-content-center navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-center p-0">
           <a class="navbar-brand" href="#">
-            //SVG ICON
+            <img src="assets/logo.svg" alt="" />
           </a>
           <button
             class="navbar-toggler"
@@ -32,7 +32,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">POKER</a>
               </li>
@@ -61,37 +61,48 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero__join">
-          <p class="hero__join__text">GET YOUR 13,000 WELCOME BONUS</p>
-          <button class="hero__join__button">JOIN INSTANTLY</button>
-        </div>
-        <div class="hero__learnMore">
-          <p class="hero__learnMore__text">ENHANCED BENEFITS & REWARDS</p>
-          <p class="hero__learnMore__text--secondary">
-            for crypto currency deposits
-          </p>
-          <button class="hero__learnMore__button">LEARN MORE</button>
+        <img src="assets/hero-banner.jpeg" alt="" class="hero__banner" />
+        <div class="hero__contenedor">
+          <div class="hero__join">
+            <div>
+              <p class="hero__join__text">GET YOUR $3,000</p>
+              <p class="hero__join__text">WELCOME BONUS</p>
+            </div>
+            <button class="hero__join__button">JOIN INSTANTLY</button>
+          </div>
+          <div class="hero__learnMore">
+            <p class="hero__learnMore__text">ENHANCED BENEFITS & REWARDS</p>
+            <p class="hero__learnMore__text hero__learnMore__text--secondary">
+              for crypto currency deposits
+            </p>
+            <button class="hero__learnMore__button">LEARN MORE</button>
+          </div>
         </div>
       </section>
       <section class="learnMore">
         <article class="learnMore__card">
-          <p class="learnMore__card__title">WEEKLY 100% MATCH</p>
+          <p class="learnMore__card__text">WEEKLY</p>
+          <p class="learnMore__card__text">100% MATCH</p>
           <button class="learnMore__card__button">LEARN MORE</button>
         </article>
         <article class="learnMore__card">
-          <p class="learnMore__card__title">MONTHLY REWARDS</p>
+          <p class="learnMore__card__text">MONTHLY</p>
+          <p class="learnMore__card__text">REWARDS</p>
           <button class="learnMore__card__button">LEARN MORE</button>
         </article>
         <article class="learnMore__card">
-          <p class="learnMore__card__title">MONTHLY MILLY</p>
+          <p class="learnMore__card__text">MONTHLY</p>
+          <p class="learnMore__card__text">MILLY</p>
           <button class="learnMore__card__button">LEARN MORE</button>
         </article>
         <article class="learnMore__card">
-          <p class="learnMore__card__title">TOP SLOTS</p>
+          <p class="learnMore__card__text">TOP</p>
+          <p class="learnMore__card__text">SLOTS</p>
           <button class="learnMore__card__button">LEARN MORE</button>
         </article>
         <article class="learnMore__card">
-          <p class="learnMore__card__title">TELL A FRIEND</p>
+          <p class="learnMore__card__text">TELL</p>
+          <p class="learnMore__card__text">A FRIEND</p>
           <button class="learnMore__card__button">LEARN MORE</button>
         </article>
       </section>
@@ -102,12 +113,14 @@
             alt=""
             class="serviceDetails__item__icon"
           />
-          <p class="serviceDetails__item__text">FAST & EASY</p>
-          <p
-            class="serviceDetails__item__text serviceDetails__item__text--bold"
-          >
-            PAYOUTS
-          </p>
+          <div>
+            <p class="serviceDetails__item__text">FAST & EASY</p>
+            <p
+              class="serviceDetails__item__text serviceDetails__item__text--bold"
+            >
+              PAYOUTS
+            </p>
+          </div>
         </article>
         <article class="serviceDetails__item">
           <img
@@ -115,12 +128,14 @@
             alt=""
             class="serviceDetails__item__icon"
           />
-          <p
-            class="serviceDetails__item__text serviceDetails__item__text--bold"
-          >
-            SAFE & SECURE
-          </p>
-          <p class="serviceDetails__item__text">DIGITAL ENVIRONMENT</p>
+          <div>
+            <p
+              class="serviceDetails__item__text serviceDetails__item__text--bold"
+            >
+              SAFE & SECURE
+            </p>
+            <p class="serviceDetails__item__text">DIGITAL ENVIRONMENT</p>
+          </div>
         </article>
         <article class="serviceDetails__item">
           <img
@@ -128,12 +143,14 @@
             alt=""
             class="serviceDetails__item__icon"
           />
-          <p class="serviceDetails__item__text">TRUSTED</p>
-          <p
-            class="serviceDetails__item__text serviceDetails__item__text--bold"
-          >
-            SINCE 2016
-          </p>
+          <div>
+            <p class="serviceDetails__item__text">TRUSTED</p>
+            <p
+              class="serviceDetails__item__text serviceDetails__item__text--bold"
+            >
+              SINCE 2016
+            </p>
+          </div>
         </article>
         <article class="serviceDetails__item">
           <img
@@ -141,12 +158,14 @@
             alt=""
             class="serviceDetails__item__icon"
           />
-          <p
-            class="serviceDetails__item__text serviceDetails__item__text--bold"
-          >
-            NO APP DOWNLOADS
-          </p>
-          <p class="serviceDetails__item__text">PLAY IN YOUR BROWSERS</p>
+          <div>
+            <p
+              class="serviceDetails__item__text serviceDetails__item__text--bold"
+            >
+              NO APP DOWNLOADS
+            </p>
+            <p class="serviceDetails__item__text">PLAY IN YOUR BROWSERS</p>
+          </div>
         </article>
         <article class="serviceDetails__item">
           <img
@@ -154,12 +173,14 @@
             alt=""
             class="serviceDetails__item__icon"
           />
-          <p
-            class="serviceDetails__item__text serviceDetails__item__text--bold"
-          >
-            10.000
-          </p>
-          <p class="serviceDetails__item__text">PLAYERS DAILY</p>
+          <div>
+            <p
+              class="serviceDetails__item__text serviceDetails__item__text--bold"
+            >
+              10.000
+            </p>
+            <p class="serviceDetails__item__text">PLAYERS DAILY</p>
+          </div>
         </article>
       </section>
       <section class="games">

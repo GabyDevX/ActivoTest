@@ -1,0 +1,127 @@
+.navbar {
+  background-color: $grey !important;
+  box-shadow: 0 2px 3px $black;
+  height: 15vh;
+  padding: 0 10%;
+  & .nav-link {
+    color: $white !important;
+    text-decoration: none;
+    list-style: none;
+  }
+  & img {
+    object-fit: contain;
+    height: 8rem;
+    width: 8rem;
+  }
+  &__auth {
+    font-size: 0.8em;
+    &__join {
+      border-radius: 18px;
+      background-color: $orange;
+      border-color: $black;
+    }
+    &__login {
+      border: none;
+      color: $orange;
+      padding: 0;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  color: $white;
+  &__contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 45%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 0 1rem;
+    align-items: center;
+  }
+  &__banner {
+    width: 100%;
+  }
+  &__join {
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__text {
+      font-size: 1.2em;
+    }
+    &__button {
+      padding-right: 0;
+      padding-left: 0;
+      background-color: $orange;
+      width: 100%;
+    }
+    & div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  &__learnMore {
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    &__text--secondary {
+      font-weight: normal;
+    }
+    &__button {
+      font-size: 0.8em;
+      color: $orange;
+      border-color: $orange;
+    }
+  }
+}
+
+.learnMore {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  &__card {
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: $black;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &__button {
+      margin-top: 1rem;
+      font-size: 0.8em;
+    }
+  }
+}
+
+.serviceDetails {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  font-size: 0.8em;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__icon {
+      height: 3rem;
+      width: auto;
+    }
+    &__text--bold {
+      font-weight: bold;
+    }
+  }
+}
