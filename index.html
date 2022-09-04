@@ -183,6 +183,39 @@
           </div>
         </article>
       </section>
+      <section class="bitcoin">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" id="carousel">
+            <div class="carousel-item active w-100">
+              <p class="bitcoin__description" id="bitcoin__description">Euro</p>
+              <p class="bitcoin__iso" id="bitcoin__iso">EUR</p>
+              <p class="bitcoin__rate" id="bitcoin__rate">19281.1789</p>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
       <section class="games">
         <article class="games__container">
           <p class="games__container__title">CASINO GAMES</p>
@@ -218,7 +251,7 @@
             <button class="games__card__viewMore">VIEW MORE</button>
           </div>
           <div class="games__card games__card--yellow">
-            <button class="games__card__title">lIVE CASINO</button>
+            <button class="games__card__title">LIVE CASINO</button>
             <div class="games__card__itemContainer">
               <div class="games__card__item">
                 <img
@@ -379,73 +412,81 @@
       </section>
       <section class="testimonials">
         <p class="testimonials__title">TESTIMONIALS</p>
-        <div class="testimonials__cardsContainer">
+        <div class="testimonials__cardContainer">
           <div class="testimonial__card">
-            <img
-              src="assets/quote.png"
-              alt="quote png image"
-              class="testimonial__card__quote"
-            />
-            <p class="testimonial__card__text">
-              I find the live casino games entertaining, and I like how Ignition
-              has lots of Crypto options
-            </p>
-            <img
-              src="assets/quote.png"
-              alt="quote png image"
-              class="testimonial__card__quote testimonial__card__quote--inverse"
-            />
+            <div>
+              <img
+                src="assets/quote.png"
+                alt="quote png image"
+                class="testimonial__card__quote"
+              />
+              <p class="testimonial__card__text">
+                I find the live casino games entertaining, and I like how
+                Ignition has lots of Crypto options
+              </p>
+              <img
+                src="assets/quote.png"
+                alt="quote png image"
+                class="testimonial__card__quote testimonial__card__quote--inverse"
+              />
+            </div>
             <p class="testimonial__card__user">JOHN. B</p>
           </div>
           <div class="testimonial__card">
-            <img
-              src="assets/quote.png"
-              alt="quote png image"
-              class="testimonial__card__quote"
-            />
-            <p class="testimonial__card__text">
-              Ignition is a site I log onto so that I can relax, have some fun
-              and, most importantly, win poker.
-            </p>
-            <img
-              src="assets/quote.png"
-              alt="quote png image"
-              class="testimonial__card__quote testimonial__card__quote--inverse"
-            />
+            <div>
+              <img
+                src="assets/quote.png"
+                alt="quote png image"
+                class="testimonial__card__quote"
+              />
+              <p class="testimonial__card__text">
+                Ignition is a site I log onto so that I can relax, have some fun
+                and, most importantly, win poker.
+              </p>
+              <img
+                src="assets/quote.png"
+                alt="quote png image"
+                class="testimonial__card__quote testimonial__card__quote--inverse"
+              />
+            </div>
             <p class="testimonial__card__user">CAMRON. A</p>
           </div>
           <div class="testimonial__card">
-            <img
-              src="assets/quote.png"
-              alt="quote png image"
-              class="testimonial__card__quote"
-            />
-            <p class="testimonial__card__text">
-              Sites shouldn't make it hard for you to withdraw. Ignition isn't
-              like that. It's so easy and quick to get your money out.
-            </p>
-            <img
-              src="assets/quote.png"
-              alt="quote png image"
-              class="testimonial__card__quote testimonial__card__quote--inverse"
-            />
+            <div>
+              <img
+                src="assets/quote.png"
+                alt="quote png image"
+                class="testimonial__card__quote"
+              />
+              <p class="testimonial__card__text">
+                Sites shouldn't make it hard for you to withdraw. Ignition isn't
+                like that. It's so easy and quick to get your money out.
+              </p>
+              <img
+                src="assets/quote.png"
+                alt="quote png image"
+                class="testimonial__card__quote testimonial__card__quote--inverse"
+              />
+            </div>
             <p class="testimonial__card__user">EDD. C</p>
           </div>
           <div class="testimonial__card">
-            <img
-              src="assets/quote.png"
-              alt="quote png image"
-              class="testimonial__card__quote"
-            />
-            <p class="testimonial__card__text">
-              One of the best parts of Ignition is its customer service. You can
-              chat with someone in real time, and they are super helpful.
-            </p>
-            <img
-              src="assets/quote.png"
-              alt="quote png image"
-              class="testimonial__card__quote testimonial__card__quote--inverse"
-            />
+            <div>
+              <img
+                src="assets/quote.png"
+                alt="quote png image"
+                class="testimonial__card__quote"
+              />
+              <p class="testimonial__card__text">
+                One of the best parts of Ignition is its customer service. You
+                can chat with someone in real time, and they are super helpful.
+              </p>
+              <img
+                src="assets/quote.png"
+                alt="quote png image"
+                class="testimonial__card__quote testimonial__card__quote--inverse"
+              />
+            </div>
             <p class="testimonial__card__user">PAULOS. S</p>
           </div>
         </div>
@@ -454,17 +495,69 @@
     <footer class="footer">
       <section class="about">
         <article class="about__trustExperience">
-          <img src="assets/trusted-experience.png" alt="" />
-          <img src="assets/bitcoin.png" alt="" />
-          <img src="assets/bitcoin-cash.png" alt="" />
-          <img src="assets/litecoin.png" alt="" />
-          <img src="assets/ethereum.png" alt="" />
-          <img src="assets/tether.png" alt="" />
-          <img src="assets/visa.png" alt="" />
-          <img src="assets/maestro.png" alt="" />
-          <img src="assets/secure-icon.png" alt="" />
-          <img src="assets/ft_18.png" alt="" />
-          <img src="assets/ft_ga.png" alt="" />
+          <img
+            class="about__trustExperience__icon about__trustExperience__icon--title"
+            src="assets/trusted-experience.png"
+            alt=""
+          />
+          <div class="about__trustExperience__line">
+            <img
+              class="about__trustExperience__icon"
+              src="assets/bitcoin.png"
+              alt=""
+            />
+            <img
+              class="about__trustExperience__icon"
+              src="assets/bitcoin-cash.png"
+              alt=""
+            />
+            <img
+              class="about__trustExperience__icon"
+              src="assets/litecoin.png"
+              alt=""
+            />
+            <img
+              class="about__trustExperience__icon"
+              src="assets/ethereum.png"
+              alt=""
+            />
+            <img
+              class="about__trustExperience__icon"
+              src="assets/tether.png"
+              alt=""
+            />
+          </div>
+          <div class="about__trustExperience__line">
+            <img
+              class="about__trustExperience__icon"
+              src="assets/visa.png"
+              alt=""
+            />
+            <img
+              class="about__trustExperience__icon"
+              src="assets/maestro.png"
+              alt=""
+            />
+            <img
+              class="about__trustExperience__icon about__trustExperience__icon--little"
+              src="assets/secure-icon.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="about__trustExperience__line about__trustExperience__line--center"
+          >
+            <img
+              class="about__trustExperience__icon about__trustExperience__icon--little"
+              src="assets/ft_18.png"
+              alt=""
+            />
+            <img
+              class="about__trustExperience__icon about__trustExperience__icon--little"
+              src="assets/ft_ga.png"
+              alt=""
+            />
+          </div>
         </article>
         <article class="about__us">
           <p class="about__us__title">ABOUT US</p>
@@ -475,32 +568,31 @@
             ullam qui reiciendis minima laborum. Aut, commodi. Maiores commodi
             rerum, molestiae dicta explicabo fuga suscipit ea enim nisi voluptas
             veritatis similique molestias hic omnis perferendis. Earum saepe
-            veritatis reprehenderit alias tempora est itaque iusto voluptates?
+            veritatis reprehenderit alias tempora est itaque veritatis
+            reprehenderit alias tempora est itaque iusto voluptates?
           </p>
         </article>
         <article class="about__customerService">
           <p class="about__customerService__title">CUSTOMER SERVICE</p>
           <a class="about__customerService__link" href="">FAQ</a>
           <a class="about__customerService__link" href="">Help Center</a>
-          <a class="about__customerService__link" href="">Follow us</a>
-          <span>
+          <div>
+            <a class="about__customerService__link" href="">Follow us</a>
             <a href="" class="about__customerService__link">
               <img
-                class="about__customerService__link--icon"
-                src="assets/instagram.png"
-                alt=""
-              />
-            </a>
-          </span>
-          <span>
-            <a href="" class="about__customerService__link">
-              <img
-                class="about__customerService__link--icon"
+                class="about__customerService__link__icon about__customerService__link__icon--little"
                 src="assets/twitter.png"
                 alt=""
               />
             </a>
-          </span>
+            <a href="" class="about__customerService__link">
+              <img
+                class="about__customerService__link__icon"
+                src="assets/instagram.png"
+                alt=""
+              />
+            </a>
+          </div>
           <a class="about__customerService__link" href="">Terms of Use</a>
           <a class="about__customerService__link" href="">Privacy Policy</a>
         </article>
@@ -515,5 +607,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
