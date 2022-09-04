@@ -2,6 +2,7 @@ const carousel = document.getElementById('carousel')
 let currencies
 let dinamicData = []
 
+//Template that returns a html element containing the dinamic data of each currency
 const currencyTemplate = (description, iso, rate) => {
   const container = document.createElement('div')
   container.className = 'carousel-item'
@@ -23,6 +24,7 @@ const currencyTemplate = (description, iso, rate) => {
   return container
 }
 
+// This function fetch the data from the json file, then it saves every currency object in the dinamicData (currencies) array, then loops into the array to append one html element for each currency using the currency template
 const getData = () => {
   fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
     .then((response) => response.json())
