@@ -15,8 +15,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar justify-content-center navbar-expand-lg">
-        <div class="container-fluid d-flex justify-content-center p-0">
+      <nav class="navbar justify-content-center navbar-expand-lg navbar-light">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="assets/logo.svg" alt="" />
           </a>
@@ -62,7 +62,7 @@
     <main>
       <section class="hero">
         <img src="assets/hero-banner.jpeg" alt="" class="hero__banner" />
-        <div class="hero__contenedor">
+        <div class="hero__container">
           <div class="hero__join">
             <div>
               <p class="hero__join__text">GET YOUR $3,000</p>
@@ -183,38 +183,30 @@
           </div>
         </article>
       </section>
-      <section class="bitcoin">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
+      <section
+        class="bitcoin carousel slide"
+        id="carouselExampleCaptions"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner" id="carousel"></div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
         >
-          <div class="carousel-inner" id="carousel">
-            <div class="carousel-item active w-100">
-              <p class="bitcoin__description" id="bitcoin__description">Euro</p>
-              <p class="bitcoin__iso" id="bitcoin__iso">EUR</p>
-              <p class="bitcoin__rate" id="bitcoin__rate">19281.1789</p>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
-        </div>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </section>
       <section class="games">
         <article class="games__container">
@@ -223,90 +215,108 @@
           <div class="games__card games__card--purple">
             <button class="games__card__title">TOP SLOTS</button>
             <div class="games__card__itemContainer">
-              <div class="games__card__item">
-                <img
-                  src="assets/reels-and-wheels.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">REELS & WHEELS</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/mystic-wilds.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">MYSTIC WILDS</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/fast-and-sexy.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">FAST & SEXY</p>
-              </div>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/reels-and-wheels.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">REELS & WHEELS</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/mystic-wilds.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">MYSTIC WILDS</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/fast-and-sexy.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">FAST & SEXY</p>
+                </div>
+              </a>
             </div>
             <button class="games__card__viewMore">VIEW MORE</button>
           </div>
           <div class="games__card games__card--yellow">
             <button class="games__card__title">LIVE CASINO</button>
             <div class="games__card__itemContainer">
-              <div class="games__card__item">
-                <img
-                  src="assets/live-blackjack.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">LIVE BLACKJACK</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/live-roulette.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">LIVE ROULETE</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/live-baccarat.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">LIVE BACCARAT</p>
-              </div>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/live-blackjack.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">LIVE BLACKJACK</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/live-roulette.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">LIVE ROULETE</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/live-baccarat.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">LIVE BACCARAT</p>
+                </div>
+              </a>
             </div>
             <button class="games__card__viewMore">VIEW MORE</button>
           </div>
           <div class="games__card games__card--orange">
             <button class="games__card__title">MOST POPULAR GAMES</button>
             <div class="games__card__itemContainer">
-              <div class="games__card__item">
-                <img
-                  src="assets/777-deluxe.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">777 DELUXE</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/golden-buffalo.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">GOLDEN BUFFALO</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/a-night-with-cleo.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">THE NEW BLACKJACK</p>
-              </div>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/777-deluxe.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">777 DELUXE</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/golden-buffalo.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">GOLDEN BUFFALO</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/a-night-with-cleo.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">THE NEW BLACKJACK</p>
+                </div>
+              </a>
             </div>
             <button class="games__card__viewMore">VIEW MORE</button>
           </div>
@@ -317,62 +327,74 @@
           <div class="games__card games__card--red">
             <button class="games__card__title">GAME TYPES</button>
             <div class="games__card__itemContainer">
-              <div class="games__card__item">
-                <img
-                  src="assets/cash-games.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">CASH GAMES</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/zone-poker.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">ZONE POKER</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/jackpot-sit-and-go.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">JACKPOT SIT & GO</p>
-              </div>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/cash-games.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">CASH GAMES</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/zone-poker.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">ZONE POKER</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/jackpot-sit-and-go.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">JACKPOT SIT & GO</p>
+                </div>
+              </a>
             </div>
             <button class="games__card__viewMore">VIEW MORE</button>
           </div>
           <div class="games__card games__card--green">
             <button class="games__card__title">FEATURED PROMOTIONS</button>
             <div class="games__card__itemContainer">
-              <div class="games__card__item">
-                <img
-                  src="assets/crypto-depositors-freeroll.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">
-                  CRYPTO DEPOSITORS'S FREEROLL
-                </p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/monthly-milly-tournaments.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">150K GTD SUNDAY</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/mad-mondays-tournaments.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">MAD MONDAY TOURNAMENTS</p>
-              </div>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/crypto-depositors-freeroll.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">
+                    CRYPTO DEPOSITORS'S FREEROLL
+                  </p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/monthly-milly-tournaments.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">150K GTD SUNDAY</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/mad-mondays-tournaments.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">MAD MONDAY TOURNAMENTS</p>
+                </div>
+              </a>
             </div>
             <button class="games__card__viewMore">VIEW MORE</button>
           </div>
@@ -381,30 +403,38 @@
               RECURRING TOURNAMENTS SERIES
             </button>
             <div class="games__card__itemContainer">
-              <div class="games__card__item">
-                <img
-                  src="assets/crypto-poker-open.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">CRYPTO POKER OPEN</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/black-diamond-poker-open.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">11TH BLACK DIAMOND POKER</p>
-              </div>
-              <div class="games__card__item">
-                <img
-                  src="assets/super-millions-poker-open.jpeg"
-                  alt=""
-                  class="games__card__item__img"
-                />
-                <p class="games__card__item__text">SUPER MILLIONS POKER</p>
-              </div>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/crypto-poker-open.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">CRYPTO POKER OPEN</p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/black-diamond-poker-open.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">
+                    11TH BLACK DIAMOND POKER
+                  </p>
+                </div>
+              </a>
+              <a class="games__card__item__link" href="#">
+                <div class="games__card__item">
+                  <img
+                    src="assets/super-millions-poker-open.jpeg"
+                    alt=""
+                    class="games__card__item__img"
+                  />
+                  <p class="games__card__item__text">SUPER MILLIONS POKER</p>
+                </div>
+              </a>
             </div>
             <button class="games__card__viewMore">VIEW MORE</button>
           </div>
@@ -574,18 +604,18 @@
         </article>
         <article class="about__customerService">
           <p class="about__customerService__title">CUSTOMER SERVICE</p>
-          <a class="about__customerService__link" href="">FAQ</a>
-          <a class="about__customerService__link" href="">Help Center</a>
+          <a class="about__customerService__link" href="#">FAQ</a>
+          <a class="about__customerService__link" href="#">Help Center</a>
           <div>
-            <a class="about__customerService__link" href="">Follow us</a>
-            <a href="" class="about__customerService__link">
+            <a class="about__customerService__link" href="#">Follow us</a>
+            <a href="#" class="about__customerService__link">
               <img
                 class="about__customerService__link__icon about__customerService__link__icon--little"
                 src="assets/twitter.png"
                 alt=""
               />
             </a>
-            <a href="" class="about__customerService__link">
+            <a href="#" class="about__customerService__link">
               <img
                 class="about__customerService__link__icon"
                 src="assets/instagram.png"
@@ -593,8 +623,8 @@
               />
             </a>
           </div>
-          <a class="about__customerService__link" href="">Terms of Use</a>
-          <a class="about__customerService__link" href="">Privacy Policy</a>
+          <a class="about__customerService__link" href="#">Terms of Use</a>
+          <a class="about__customerService__link" href="#">Privacy Policy</a>
         </article>
       </section>
       <section class="join">
