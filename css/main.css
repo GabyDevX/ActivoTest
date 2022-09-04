@@ -140,6 +140,10 @@ button {
     height: 70%; } }
 
 @media screen and (max-width: 570px) {
+  .hero__banner {
+    height: 10rem;
+    object-fit: cover;
+    overflow: hidden; }
   .hero__container {
     font-size: 0.8em;
     padding: 0; } }
@@ -147,6 +151,10 @@ button {
 @media screen and (max-width: 450px) {
   .hero {
     font-size: 0.8em; }
+    .hero__banner {
+      height: 8rem;
+      object-fit: cover;
+      overflow: hidden; }
     .hero__container button {
       font-size: 0.8em; } }
 
@@ -203,6 +211,20 @@ button {
     .serviceDetails__item__text--bold {
       font-weight: bold; }
 
+@media screen and (max-width: 970px) {
+  .serviceDetails {
+    scroll-snap-type: x;
+    overflow: auto;
+    justify-content: flex-start;
+    gap: 1rem; }
+    .serviceDetails__item {
+      white-space: nowrap;
+      gap: 0.5rem;
+      width: auto; }
+      .serviceDetails__item__icon {
+        height: 2rem;
+        width: auto; } }
+
 .bitcoin {
   margin-bottom: 1rem;
   border-radius: 6px; }
@@ -219,7 +241,19 @@ button {
       justify-content: center;
       align-items: flex-end;
       bottom: 0;
-      color: #ff6801; }
+      color: #ffffff; }
+
+@media screen and (max-width: 680px) {
+  .bitcoin {
+    font-size: 0.8em; }
+    .bitcoin h5 {
+      font-size: 1em; } }
+
+@media screen and (max-width: 560px) {
+  .bitcoin {
+    font-size: 0.7em; }
+    .bitcoin h5 {
+      font-size: 0.9em; } }
 
 .games {
   display: flex;
@@ -329,6 +363,32 @@ button {
     .games__card--blue .games__card__viewMore {
       border-color: #0d49f5; }
 
+@media screen and (max-width: 970px) {
+  .games__card__viewMore {
+    width: 40%; } }
+
+@media screen and (max-width: 740px) {
+  .games {
+    flex-direction: column; }
+    .games__card__item {
+      height: 14rem; } }
+
+@media screen and (max-width: 540px) {
+  .games__card__itemContainer a:nth-last-child(1) {
+    display: none; }
+  .games__card__item__text {
+    font-size: 0.7em; } }
+
+@media screen and (max-width: 440px) {
+  .games__card__viewMore {
+    width: 50%; }
+  .games__card__item {
+    height: 13rem; } }
+
+@media screen and (max-width: 380px) {
+  .games__card__item {
+    height: 12rem; } }
+
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -366,6 +426,28 @@ button {
       .testimonials__cardContainer .testimonial__card__text, .testimonials__cardContainer .testimonial__card__user {
         text-align: center;
         font-size: 0.8em; }
+
+@media screen and (max-width: 900px) {
+  .testimonials {
+    font-size: 0.8em; } }
+
+@media screen and (max-width: 700px) {
+  .testimonials {
+    font-size: 1rem; }
+    .testimonials__cardContainer {
+      width: 100%;
+      scroll-snap-type: x;
+      overflow: auto;
+      justify-content: flex-start;
+      gap: 1rem; }
+    .testimonials .testimonial__card {
+      padding: 1rem 0.5rem;
+      height: 12rem;
+      min-width: 50%; } }
+
+@media screen and (max-width: 435px) {
+  .testimonials {
+    font-size: 0.8em; } }
 
 .footer .about {
   padding: 0 10%;
@@ -437,3 +519,20 @@ button {
   .footer .join__text {
     color: #ffffff;
     font-size: 0.7em; }
+
+@media screen and (max-width: 900px) {
+  .footer .about {
+    flex-direction: column;
+    align-items: center; }
+    .footer .about__trustExperience__line {
+      justify-content: center;
+      gap: 0.5rem; }
+    .footer .about article {
+      width: 80%;
+      text-align: center; } }
+
+@media screen and (max-width: 900px) {
+  .footer .join {
+    font-size: 0.8em;
+    gap: 0.5rem;
+    flex-direction: column; } }

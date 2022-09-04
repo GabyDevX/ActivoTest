@@ -129,6 +129,11 @@
 }
 @media screen and (max-width: 570px) {
   .hero {
+    &__banner {
+      height: 10rem;
+      object-fit: cover;
+      overflow: hidden;
+    }
     &__container {
       font-size: 0.8em;
       padding: 0;
@@ -137,6 +142,11 @@
 }
 @media screen and (max-width: 450px) {
   .hero {
+    &__banner {
+      height: 8rem;
+      object-fit: cover;
+      overflow: hidden;
+    }
     font-size: 0.8em;
     &__container {
       & button {
@@ -155,15 +165,13 @@
   }
 }
 
+//Learn More section
 .learnMore {
   display: flex;
   flex-wrap: nowrap;
   gap: 0.5rem;
   margin-bottom: 1rem;
-  // scroll-snap-type: y;
-  // overflow-y: auto;
   &__card {
-    // display: inline-block;
     font-weight: bold;
     border-radius: 6px;
     background-color: $black;
@@ -182,6 +190,7 @@
   }
 }
 
+//Learn More responsive
 @media screen and (max-width: 970px) {
   .learnMore {
     scroll-snap-type: x;
@@ -195,6 +204,7 @@
   }
 }
 
+//Service Details section
 .serviceDetails {
   display: flex;
   width: 100%;
@@ -218,6 +228,26 @@
   }
 }
 
+//Service Details responsive
+@media screen and (max-width: 970px) {
+  .serviceDetails {
+    scroll-snap-type: x;
+    overflow: auto;
+    justify-content: flex-start;
+    gap: 1rem;
+    &__item {
+      white-space: nowrap;
+      gap: 0.5rem;
+      width: auto;
+      &__icon {
+        height: 2rem;
+        width: auto;
+      }
+    }
+  }
+}
+
+//Bitcoin section
 .bitcoin {
   margin-bottom: 1rem;
   border-radius: 6px;
@@ -235,11 +265,30 @@
       justify-content: center;
       align-items: flex-end;
       bottom: 0;
-      color: $orange;
+      color: $white;
     }
   }
 }
 
+//Bitcoin responsive
+@media screen and (max-width: 680px) {
+  .bitcoin {
+    font-size: 0.8em;
+    & h5 {
+      font-size: 1em;
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .bitcoin {
+    font-size: 0.7em;
+    & h5 {
+      font-size: 0.9em;
+    }
+  }
+}
+
+//Games section
 .games {
   display: flex;
   gap: 1rem;
@@ -386,6 +435,52 @@
   }
 }
 
+//Games responsive
+@media screen and (max-width: 970px) {
+  .games__card__viewMore {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .games {
+    flex-direction: column;
+    &__card__item {
+      height: 14rem;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .games__card__itemContainer a:nth-last-child(1) {
+    display: none;
+  }
+  .games__card__item__text {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .games {
+    &__card {
+      &__viewMore {
+        width: 50%;
+      }
+      &__item {
+        height: 13rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .games {
+    &__card__item {
+      height: 12rem;
+    }
+  }
+}
+
+//Testimonials section
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -433,6 +528,38 @@
   }
 }
 
+//Testimonials responsive
+@media screen and (max-width: 900px) {
+  .testimonials {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .testimonials {
+    font-size: 1rem;
+    &__cardContainer {
+      width: 100%;
+      scroll-snap-type: x;
+      overflow: auto;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+    .testimonial__card {
+      padding: 1rem 0.5rem;
+      height: 12rem;
+      min-width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .testimonials {
+    font-size: 0.8em;
+  }
+}
+
+//Footer section
 .footer {
   .about {
     padding: 0 10%;
@@ -522,6 +649,34 @@
     &__text {
       color: $white;
       font-size: 0.7em;
+    }
+  }
+}
+
+//Footer responsive
+@media screen and (max-width: 900px) {
+  .footer {
+    & .about {
+      flex-direction: column;
+      align-items: center;
+      &__trustExperience__line {
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      & article {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    & .join {
+      font-size: 0.8em;
+      gap: 0.5rem;
+      flex-direction: column;
     }
   }
 }
