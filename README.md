@@ -8,7 +8,9 @@
 
 ## Technologies
 
-### For this project I've used HTML as markup language to code the structure of the page, SCSS as css preprocesor to give style to the page and Javascript to fetch some required data and dinamically display it on the page.
+### For this project I've used HTML as markup language to code the structure of the page, SCSS as css preprocesor to give style to the page and Vanilla Javascript to fetch some required data and dinamically display it on the page.
+
+### To complement the styling of some components I've implemented Bootstrap 5 and adapted it to match the design.
 
 ### I've used BEM for the class naming, and applied a good SEO practices that are required for this test.
 

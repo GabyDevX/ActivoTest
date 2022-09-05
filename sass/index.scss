@@ -1,10 +1,8 @@
+// Font imports
 @import url('https://use.typekit.net/rsw3bla.css');
-
-// Saira
-// font-family: 'Saira', sans-serif;
-
 @import url('http://fonts.cdnfonts.com/css/saira');
 
+// SCSS files import
 @import './misc/variables';
 @import './misc/normalize';
 @import './views/home';
